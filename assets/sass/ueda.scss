@@ -98,3 +98,14 @@ img {
 .navbar-custom .nav-item:last-child {
   border-right: none;
 }
+
+@media (max-width: 576px) {
+  .sub-links {
+    text-align: center !important;
+    margin-top: 1rem;
+  }
+  .sub-links a {
+    display: block;
+    margin-bottom: 0.25rem;
+  }
+}

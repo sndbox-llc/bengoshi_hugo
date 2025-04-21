@@ -9,6 +9,7 @@
     <meta name="description" content="{{ .Site.Params.description }}">
   {{ end -}}
 {{ end -}}
+<meta name="keywords" content="{{ delimit .Site.Params.keywords ", " }}">
 
 {{ if or (.Params.noindex) (eq .Kind "404") }}
   <meta name="robots" content="noindex">

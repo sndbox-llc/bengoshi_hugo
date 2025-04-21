@@ -1,8 +1,8 @@
 # Site Params
 
 # Open Graph, Twitter Cards and schema.org Thing and Article (in posts)
-description = "栃木県宇都宮市にあるヘアサロン RYUの公式サイトです。カット・パーマ・カラーなどのメニューや、サロンの雰囲気をお伝えします。"
-keywords = ["RYU", "宇都宮", "ヘアサロン", "美容室", "カット", "パーマ", "カラー"]
+description = "栃木県宇都宮市の総合法律事務所。交通事故、離婚問題から企業における法的問題まで、ほたか総合法律事務所にお気軽にご連絡ください。"
+keywords = ["交通事故", "損害賠償請求", "離婚", "親権", "相続問題", "高齢者", "障害者", "法的サポート","不動産取引", "借地", "借家関係", "債務整理", "破産", "金銭貸借", "労働問題", "民事介入暴力対応","刑事弁護", "会社法務", "株主総会", "株主代表訴訟", "契約関係", "契約書作成", "契約書チェック","M&A", "事業再生", "倒産", "会社破産", "会社更正", "民事再生", "特別清算","債権保全", "債権回収", "環境問題", "知的財産管理", "不正競争", "栃木", "宇都宮"]
 images = ['images/site-feature-image.png']
 # mainMenuLogo = "images/logo.svg"
 
@@ -17,8 +17,8 @@ alertText = "Introducing this new service! <a class=\"alert-link stretched-link\
 
 # Pre-footer
 footerAbout = true
-footerAboutTitle = "美容室RYU"
-footerAboutText = "栃木県宇都宮市の美容室RYUです。カット・パーマ・カラーなどのメニューや、サロンの雰囲気をお伝えします。"
+footerAboutTitle = "ほたか総合法律事務所"
+footerAboutText = "栃木県宇都宮市の総合法律事務所。交通事故、離婚問題から企業における法的問題まで、ほたか総合法律事務所にお気軽にご連絡ください。"
 
 [options]
   bootStrapJs = true
