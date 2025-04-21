@@ -57,3 +57,44 @@ img {
   margin-top: 1rem;
 
 }
+
+.navbar-custom {
+  background: linear-gradient(to bottom, #6a3d1e, #47280f); /* 上が明るい茶 */
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.navbar-custom .nav-link {
+  color: #fff;
+  font-family: "Hiragino Mincho ProN", serif;
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  white-space: nowrap;
+}
+
+.navbar-custom .nav-link:first-child {
+  border-left: none;
+}
+
+.navbar-custom .nav-link:hover,
+.navbar-custom .nav-link.active {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.navbar-custom .nav-item {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-custom .nav-link .bi {
+  margin-right: 0.25rem;
+}.navbar-custom .nav-item {
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* 最後の項目にはボーダーを付けない */
+.navbar-custom .nav-item:last-child {
+  border-right: none;
+}

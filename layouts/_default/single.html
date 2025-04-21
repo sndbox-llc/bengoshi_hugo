@@ -1,7 +1,24 @@
 {{ define "main" }}
+<h2 class="myh2">インフォメーション</h2>
+<div class="container my-5">
+  <div class="card border rounded shadow-sm p-4" style="font-family: 'Hiragino Mincho ProN', serif;">
 
-<div class="container py-3">
-  {{ .Content }}
+    <!-- 記事タイトル -->
+    <h2 class="fw-bold border-bottom pb-2 mb-4" style="color: #333;">
+      {{ .Title }}
+    </h2>
+
+    <!-- 投稿日（右上に）-->
+    <p class="text-end fw-bold mb-4" style="color: #333;">
+      {{ .Date.Format "2006.01.02" }}
+    </p>
+
+    <!-- 本文 -->
+    <div class="fs-5 lh-lg">
+      {{ .Content }}
+    </div>
+
+  </div>
 </div>
 
 {{ end }}

@@ -21,3 +21,4 @@ draft: false
     <p class="mb-0" style="font-size: 1rem;">受付時間　午前９：００〜午後６：００</p>
   </div>
 </div>
+
