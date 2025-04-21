@@ -1,0 +1,132 @@
+{{ if .Site.Params.alert -}}
+{{ partial "header/alert.html" . }}
+{{ end -}}
+
+<header class="main-header">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+    <div class="container">
+
+      <!-- Menu Toggler -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Main Menu -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="menu-main navbar-nav me-auto mb-2 mb-lg-0">
+          {{- $current := . -}}
+          {{- $section := $current.Section -}}
+          {{ range .Site.Menus.main -}}
+          {{- $active := or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) -}}
+          {{- $active = or $active (eq .Name $current.LinkTitle) -}}
+          {{- $active = or $active (and (eq .Name ($section | humanize)) (eq $current.Section $section)) -}}
+          {{- $active = or $active (and (eq .Name "Blog") (eq $current.Section "blog" "contributors")) -}}
+          {{ if .HasChildren }}
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              {{ .Name }}
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              {{ range .Children -}}
+              {{- $active = eq .Name $current.LinkTitle -}}
+              <li>
+                <a class="dropdown-item{{ if $active }} active{{ end }}" href="{{ .URL | relLangURL }}" {{ if $active }}aria-current="true" {{ end }}>
+                  {{ .Name }}
+                </a>
+              </li>
+              {{ end -}}
+            </ul>
+          </li>
+          {{ else }}
+          <li class="nav-item">
+            <a class="nav-link{{ if $active }} active{{ end }}" aria-current="page" href="{{ .URL | relLangURL }}"{{ with .Title }} title='{{ . }}' aria-label='{{ . }}'{{ end }}>{{ .Name }}</a>
+          </li>
+          {{ end }}
+          {{ end -}}
+        </ul>
+
+        <!-- Language Menu -->
+        {{ if hugo.IsMultilingual -}}
+        <div class="menu-language order-md-2">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarLanguageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                {{ .Site.Params.languageISO }}
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarLanguageDropdown">
+                <li>
+                  <a class="dropdown-item active" aria-current="true" href="{{ .RelPermalink }}"{{ with .Title }} title='{{ . }}' aria-label='{{ . }}'{{ end }}>
+                    {{ .Site.Language.LanguageName }}
+                  </a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                {{ if .IsTranslated -}}
+                {{ range .Translations }}
+                <li>
+                  <a class="dropdown-item" rel="alternate" href="{{ .RelPermalink }}" hreflang="{{ .Lang }}" lang="{{ .Lang }}"{{ with .Title }} title='{{ . }}' aria-label='{{ . }}'{{ end }}>
+                    {{ .Language.LanguageName }}
+                  </a>
+                </li>
+                {{ end -}}
+                {{ else -}}
+                {{ range .Site.Home.AllTranslations -}}
+                {{ if ne $.Site.Language.Lang .Language.Lang }}
+                <li>
+                  <a class="dropdown-item" rel="alternate" href="{{ .RelPermalink }}" hreflang="{{ .Lang }}" lang="{{ .Lang }}"{{ with .Title }} title='{{ . }}' aria-label='{{ . }}'{{ end }}>
+                    {{ .Language.LanguageName }}
+                  </a>
+                </li>
+                {{ end -}}
+                {{ end -}}
+                {{ end -}}
+              </ul>
+            </li>
+          </ul>
+        </div>
+        {{ end -}}
+
+        <!-- Social Menu -->
+        {{ if isset .Site.Menus "social" }}
+        <div class="menu-social d-flex">
+          <ul class="navbar-nav">
+            {{ range .Site.Menus.social -}}
+            <li class="nav-item">
+              <a class="nav-link" href="{{ .URL | relLangURL }}" target='{{ if in .URL "https://" }}_blank{{ else }}_self{{ end }}'{{ with .Title }} title='{{ . }}' aria-label='{{ . }}'{{ end }}>
+                {{ .Pre | safeHTML }}<small class="ms-2 d-md-none">{{ .Name | safeHTML }}</small>
+              </a>
+            </li>
+            {{ end -}}
+          </ul>
+        </div>
+        {{ end }}
+
+      </div>
+    </div>
+  </nav>
+</header>
+
+<header class="py-3 border-bottom">
+  <div class="container d-flex justify-content-between align-items-center">
+    
+    <!-- 左側：ロゴと事務所名 -->
+    <div class="d-flex align-items-center">
+      <a href="/" class="me-3">
+        <img src="/logo.png" alt="ほたか総合法律事務所ロゴ" style="height: 48px;">
+      </a>
+      <div>
+        <div class="fw-bold text-dark" style="font-size: 1.2rem;">弁護士法人</div>
+        <div class="fs-4 fw-bold text-dark">ほたか総合法律事務所</div>
+        <div class="text-muted small">Hotaka General Law Office</div>
+      </div>
+    </div>
+
+    <!-- 右側：サブリンク -->
+    <div class="text-end">
+      <a href="/privacy/" class="text-decoration-none text-brown me-3">&gt; プライバシーポリシー</a>
+      <a href="/sitemap/" class="text-decoration-none text-brown">&gt; サイトマップ</a>
+    </div>
+
+  </div>
+</header>

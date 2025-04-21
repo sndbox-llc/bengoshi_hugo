@@ -1,0 +1,59 @@
+
+img {
+    max-width: 100%;
+}
+
+.text-brown {
+    color: #7a3b1d;
+}
+  
+.text-brown:hover {
+    text-decoration: underline;
+}
+
+.top-banner {
+    background-image: url('/images/top-banner.jpg');
+    background-size: cover;
+    background-position: center right;
+    border-radius: 8px;
+    min-height: 320px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(59, 35, 22, 0.6);
+    z-index: 1;
+  }
+  
+  .z-2 {
+    position: relative;
+    z-index: 2;
+  }
+  
+
+  .hover-shadow:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.2s ease-in-out;
+  }
+  
+.myh2{
+  font-family: 'Hiragino Mincho ProN', serif;
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding: 1.5rem 0;
+  color: #5c2e10; /* 深ブラウン */
+  background: #f4f1ee;
+  margin-bottom: 1rem;
+}
+
+.myh3 {
+  color: #5c2e10; /* 深ブラウン */
+  font-family: 'Hiragino Mincho ProN', serif;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+
+}

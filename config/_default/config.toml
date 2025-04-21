@@ -1,0 +1,65 @@
+baseURL = "/"
+title = "Hair Salon 隆（RYU）"
+author = "合同会社サンドボックス"
+copyright = "2025 合同会社サンドボックス"
+
+timeZone = 'Asia/Tokyo'
+
+# Multilingual
+defaultContentLanguage = "ja"
+defaultContentLanguageInSubdir = false
+
+hasCJKLanguage = true  # 日本語・中国語・韓国語対応（検索や改行に便利）
+
+[languages]
+
+  [languages.ja]
+    languageName = "日本語"
+    languageCode = "ja-JP"
+    weight = 1
+    [languages.ja.params]
+      languageISO = "ja"
+
+
+
+
+disableHugoGeneratorInject = true
+enableRobotsTXT = true
+enableGitInfo = true
+enableEmoji = true
+#sectionPagesMenu = "main"
+#googleAnalytics = "UA-1511XXXX-X"
+
+
+[params]
+  noindex = true
+
+[frontmatter]
+  date = ["date", "publishDate", "lastmod"]
+  lastmod = ["lastmod", ":fileModTime", ":default"]
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  series = 'series'
+  author = "authors"
+
+[sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+[permalinks]
+#  post = "/post/:title/"
+
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "0.99.1"
+    max = ""
+  [[module.mounts]]
+    source = "assets"
+    target = "assets"
+  [[module.mounts]]
+    source = "static"
+    target = "static"

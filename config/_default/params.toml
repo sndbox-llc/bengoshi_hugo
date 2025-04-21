@@ -1,0 +1,27 @@
+# Site Params
+
+# Open Graph, Twitter Cards and schema.org Thing and Article (in posts)
+description = "栃木県宇都宮市にあるヘアサロン RYUの公式サイトです。カット・パーマ・カラーなどのメニューや、サロンの雰囲気をお伝えします。"
+keywords = ["RYU", "宇都宮", "ヘアサロン", "美容室", "カット", "パーマ", "カラー"]
+images = ['images/site-feature-image.png']
+# mainMenuLogo = "images/logo.svg"
+
+# For favicons
+## Chrome Browser
+themeColor = "#fff"
+
+# Alert
+alert = false
+alertDismissable = true
+alertText = "Introducing this new service! <a class=\"alert-link stretched-link\" href=\"https://salvus.site/\">Check out Total Security</a>"
+
+# Pre-footer
+footerAbout = true
+footerAboutTitle = "美容室RYU"
+footerAboutText = "栃木県宇都宮市の美容室RYUです。カット・パーマ・カラーなどのメニューや、サロンの雰囲気をお伝えします。"
+
+[options]
+  bootStrapJs = true
+  breadCrumb = true
+  listCategoryFilter = true
+  listTagFilter = true
