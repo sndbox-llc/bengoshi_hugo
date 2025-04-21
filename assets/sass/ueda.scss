@@ -1,4 +1,8 @@
 
+body {
+  font-family: 'Hiragino Mincho ProN', serif;
+}
+
 img {
     max-width: 100%;
 }
@@ -7,11 +11,18 @@ img {
     color: #7a3b1d;
 }
   
-.text-brown:hover {
-    text-decoration: underline;
+a {
+  color: #7a3b1d; /* おすすめの上品な茶色 */
+  text-decoration: none;
 }
 
-.top-banner {
+a:hover {
+  color: #5c2e10; /* ホバー時は濃いめに */
+  text-decoration: underline;
+}
+
+.top-banner-section {
+  .top-banner {
     background-image: url('/images/top-banner.jpg');
     background-size: cover;
     background-position: center right;
@@ -19,85 +30,94 @@ img {
     min-height: 320px;
     position: relative;
     overflow: hidden;
-  }
-  
-  .overlay {
-    position: absolute;
-    inset: 0;
-    background-color: rgba(59, 35, 22, 0.6);
-    z-index: 1;
-  }
-  
-  .z-2 {
-    position: relative;
-    z-index: 2;
-  }
-  
 
-  .hover-shadow:hover {
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.2s ease-in-out;
+    .overlay {
+      position: absolute;
+      inset: 0;
+      background-color: rgba(59, 35, 22, 0.6);
+      z-index: 1;
+    }
+
+    .content {
+      position: relative;
+      z-index: 2;
+      padding: 3rem 3rem;
+
+      p {
+        font-size: 1.25rem;
+        color: #fff;
+        margin: 0;
+      }
+    }
+
+    &:hover {
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      transition: box-shadow 0.2s ease-in-out;
+    }
   }
-  
-.myh2{
-  font-family: 'Hiragino Mincho ProN', serif;
-  font-size: 1.8rem;
-  font-weight: bold;
-  padding: 1.5rem 0;
-  color: #5c2e10; /* 深ブラウン */
-  background: #f4f1ee;
-  margin-bottom: 1rem;
 }
 
-.myh3 {
-  color: #5c2e10; /* 深ブラウン */
-  font-family: 'Hiragino Mincho ProN', serif;
-  font-weight: bold;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
 
+.mainContents {
+  h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1.5rem 0;
+    color: #5c2e10; /* 深ブラウン */
+    background: #f4f1ee;
+    margin-bottom: 1rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1rem 0;
+    color: #5c2e10; /* 深ブラウン */
+    background: #f4f1ee;
+    margin-bottom: 1rem;
+  }
 }
+
+
 
 .navbar-custom {
-  background: linear-gradient(to bottom, #6a3d1e, #47280f); /* 上が明るい茶 */
+  background: linear-gradient(to bottom, #6a3d1e, #47280f);
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+
+  .nav-item {
+    display: flex;
+    align-items: center;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+
+    &:last-child {
+      border-right: none;
+    }
+
+    .nav-link {
+      color: #fff;
+      font-family: 'Hiragino Mincho ProN', serif;
+      font-weight: bold;
+      padding: 0.75rem 1.5rem;
+      white-space: nowrap;
+      border-left: 1px solid rgba(255, 255, 255, 0.2);
+
+      &:first-child {
+        border-left: none;
+      }
+
+      &:hover,
+      &.active {
+        background-color: rgba(255, 255, 255, 0.1);
+        color: #fff;
+      }
+
+      .bi {
+        margin-right: 0.25rem;
+      }
+    }
+  }
 }
 
-.navbar-custom .nav-link {
-  color: #fff;
-  font-family: "Hiragino Mincho ProN", serif;
-  font-weight: bold;
-  padding: 0.75rem 1.5rem;
-  border-left: 1px solid rgba(255, 255, 255, 0.2);
-  white-space: nowrap;
-}
-
-.navbar-custom .nav-link:first-child {
-  border-left: none;
-}
-
-.navbar-custom .nav-link:hover,
-.navbar-custom .nav-link.active {
-  background-color: rgba(255, 255, 255, 0.1);
-  color: #fff;
-}
-
-.navbar-custom .nav-item {
-  display: flex;
-  align-items: center;
-}
-
-.navbar-custom .nav-link .bi {
-  margin-right: 0.25rem;
-}.navbar-custom .nav-item {
-  border-right: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-/* 最後の項目にはボーダーを付けない */
-.navbar-custom .nav-item:last-child {
-  border-right: none;
-}
 
 @media (max-width: 576px) {
   .sub-links {

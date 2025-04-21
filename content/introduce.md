@@ -4,8 +4,7 @@ draft: false
 ---
 
 
-<h2 class="myh2">所属弁護士紹介</h2>
-
+## 所属弁護士紹介
 
 <!-- 亀岡弘敬 -->
 <div class="card border rounded p-4 mb-5">

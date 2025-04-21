@@ -3,10 +3,9 @@ title: "アクセス"
 draft: false
 ---
 
-<h2 class="myh2">アクセス</h2>
+## アクセス
 
-
-<h3 class="myh3">事務所概要</h3>
+### 事務所概要
 
 <dl class="basic">
 <dt>事務所名</dt>
@@ -46,7 +45,8 @@ draft: false
 
 
 <div class="card border-0 bg-light p-4 shadow-sm mb-5">
-<h3 class="myh3">アクセス</h3>
+
+### アクセス
 
 <p class="mb-2">
 〒320-0863<br>
@@ -60,11 +60,12 @@ draft: false
 </ul>
 
 
-<h3 class="myh3">事務所周辺マップ</h3>
+### 事務所周辺マップ
 
 <img src="/images/access/map.png" class="img-fluid rounded shadow-sm" alt="地図">
 
-<h3 class="myh3">駐車場マップ</h3>
+
+### 駐車場マップ
 
 <img src="/images/access/map-parking.png" class="img-fluid rounded shadow-sm" alt="駐車場地図">
 
@@ -83,7 +84,7 @@ HOTAKAビル東側に駐車場がございますので、そちらをご利用�
 </a>
 
 
-<h3 class="myh3">所在地（Google Map）</h3>
+### 所在地（Google Map）
 
 <div class="card-footer bg-white border-0">
 <div class="ratio ratio-4x3">

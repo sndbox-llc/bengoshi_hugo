@@ -3,8 +3,7 @@ title: "コンタクト"
 draft: false
 ---
 
-
-<h2 class="myh2">お問い合わせ</h2>
+## お問い合わせ
 
 <!-- 電話カード -->
 <div class="card border rounded p-4 my-5 text-center">
