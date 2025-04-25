@@ -1,6 +1,6 @@
 +++
 aliases = ["posts", "blog"]
-title = "Posts"
+title = "インフォメーション"
 authors = ["Admin"]
 tags = []
 +++

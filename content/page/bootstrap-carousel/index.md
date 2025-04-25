@@ -10,13 +10,3 @@ keywords: ["bootstrap carousel","bootstrap","hugo bootstrap theme"]
 # カルーセル
 
 A slideshow component for cycling through elements—images or slides of text — like a carousel.
-
-<br>
-
-<div class="w-50 mx-auto">
-    {{< carousel imagesPattern="carousel/*.png" aspectRatio="3/2" crossFade=false withIndicators=true withControls=true >}}
-</div>
-
-<br>
-
-See [Carousel documentation](https://getbootstrap.com/docs/5.3/components/carousel/).

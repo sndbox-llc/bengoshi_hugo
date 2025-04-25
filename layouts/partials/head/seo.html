@@ -1,5 +1,10 @@
-<title>{{ .Title }}</title>
-
+<title>
+  {{- if .IsHome -}}
+    {{ .Site.Title }}
+  {{- else -}}
+    {{ .Title }} | {{ .Site.Title }}
+  {{- end -}}
+</title>
 {{ with .Description -}}
   <meta name="description" content="{{ . }}">
 {{ else -}}
