@@ -69,9 +69,9 @@ draft: false
   </div>
 
   <div class="row mb-4">
-    <label for="content" class="col-md-3 col-form-label">お問い合わせ内容</label>
+    <label for="toiawasehonbun" class="col-md-3 col-form-label">お問い合わせ内容</label>
     <div class="col-md-9">
-      <textarea id="content" class="form-control" rows="8"></textarea>
+      <textarea id="toiawasehonbun" class="form-control" rows="8"></textarea>
     </div>
   </div>
 
@@ -102,7 +102,8 @@ draft: false
     const addr = document.getElementById("addr").value;
     const tel = document.getElementById("tel").value;
     const email = document.getElementById("mail").value;
-    const content = document.getElementById("content").value;
+    const content = document.getElementById("toiawasehonbun").value;
+    console.log(content)
 
     try {
       if (!EMAIL_REG_EXP.test(email)) throw "メールアドレスが不正です";
