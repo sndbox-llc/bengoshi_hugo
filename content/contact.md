@@ -36,42 +36,42 @@ draft: false
   <div class="row mb-4">
     <label for="name" class="col-md-3 col-form-label">お名前</label>
     <div class="col-md-9">
-      <input type="text" id="name" class="form-control" />
+      <input type="text" id="name" class="form-control" style="width:100%" />
     </div>
   </div>
 
   <div class="row mb-4">
     <label for="company" class="col-md-3 col-form-label">会社名（任意）</label>
     <div class="col-md-9">
-      <input type="text" id="company" class="form-control" />
+      <input type="text" id="company" class="form-control" style="width:100%"  />
     </div>
   </div>
 
   <div class="row mb-4">
     <label for="addr" class="col-md-3 col-form-label">ご住所</label>
     <div class="col-md-9">
-      <input type="text" id="addr" class="form-control" />
+      <input type="text" id="addr" class="form-control"  style="width:100%" />
     </div>
   </div>
 
   <div class="row mb-4">
     <label for="tel" class="col-md-3 col-form-label">電話番号</label>
     <div class="col-md-9">
-      <input type="tel" id="tel" class="form-control" />
+      <input type="tel" id="tel" class="form-control" style="width:100%"  />
     </div>
   </div>
 
   <div class="row mb-4">
     <label for="mail" class="col-md-3 col-form-label">メールアドレス</label>
     <div class="col-md-9">
-      <input type="email" id="mail" class="form-control" />
+      <input type="email" id="mail" class="form-control" style="width:100%"  />
     </div>
   </div>
 
   <div class="row mb-4">
     <label for="toiawasehonbun" class="col-md-3 col-form-label">お問い合わせ内容</label>
     <div class="col-md-9">
-      <textarea id="toiawasehonbun" class="form-control" rows="8"></textarea>
+      <textarea id="toiawasehonbun" class="form-control" rows="8" style="width:100%" ></textarea>
     </div>
   </div>
 
