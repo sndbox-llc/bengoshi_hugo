@@ -1,12 +1,12 @@
 ---
 title: "業務案内"
-draft: false
+description: '宇都宮の弁護士法人ほたか総合法律事務所が提供する業務案内ページ。交通事故・離婚・相続などの個人向け相談から、企業法務・M&A・契約書対応まで幅広く対応。'
 ---
 
 ## 業務案内
 
 
-当事務所では、初回法律相談は、３０分あたり５０００円（消費税別）にて、行っております。
+当事務所では、初回の法律相談は、30分あたり5,000円（税別）で承っております。
 
 
 
@@ -20,7 +20,7 @@ draft: false
 <!-- 左カードここから-->
 <div class="card border rounded p-4 mb-5">
 <h4 class="fw-bold border-bottom pb-2 mb-3" style="color: #3c2b1c; font-family: 'Hiragino Mincho ProN', serif;">個人のお客様</h4>
-<p class="mb-4" style="line-height: 1.8;">当事務所では、個人のお客様に対して、下記の様々な法的サービスを提供いたしております。</p>
+<p class="mb-4" style="line-height: 1.8;">当事務所では、個人のお客様に対し、以下の多様な法的サービスを提供しております。</p>
 <ul class="list-unstyled">
 <li class="border-bottom py-2">
 <a href="#c1" class="text-decoration-none" style="color: #843c0c;">» 交通事故等の損害賠償請求</a>
@@ -99,7 +99,7 @@ draft: false
 
 <!-- その他カードここから-->
 <div class="card border rounded p-4 mb-5">
-<h4 class="fw-bold border-bottom pb-2 mb-3" style="color: #3c2b1c; font-family: 'Hiragino Mincho ProN', serif;">その他</h4>
+<h4 id="other" class="fw-bold border-bottom pb-2 mb-3" style="color: #3c2b1c; font-family: 'Hiragino Mincho ProN', serif;">その他</h4>
 
 <p class="mb-4" style="line-height: 1.8;">当事務所では、上記以外にも、ご依頼に応じて以下の業務も行っております。</p>
 
@@ -112,7 +112,7 @@ draft: false
 
 <!-- 個人カードここから-->
 <div class="card border rounded p-4 mb-5">
-  <h4 class="fw-bold border-bottom pb-2 mb-4" style="color: #3c2b1c; font-family: 'Hiragino Mincho ProN', serif;">
+  <h4 id="customer" class="fw-bold border-bottom pb-2 mb-4" style="color: #3c2b1c; font-family: 'Hiragino Mincho ProN', serif;">
     個人のお客様
   </h4>
 
@@ -128,7 +128,7 @@ draft: false
 
   <div id="c3" class="mb-4 pb-3 border-bottom">
     <h5 class="fw-bold">③ 不動産取引一般、借地・借家関係</h5>
-    <p>不動産取引における、法的問題点についてのアドバイス、契約締結に関する法的サービスを提供しております。特に、土地は農地法などの規制がある場合もあるので、取引に際しては、各種調査が必要となります。また、借地、借家関連のトラブル（賃料の滞納、明け渡し問題）などにも対処し、借り主双方の相談を受け付けております。</p>
+    <p>不動産取引における、法的問題点についてのアドバイス、契約締結に関する法的サービスを提供しております。特に、土地は農地法などの規制がある場合もあるので、取引に際しては、各種調査が必要となります。また、借地、借家関連のトラブル（賃料の滞納、明け渡し問題）などにも対処し、貸主・借主双方からのご相談に対応しております。</p>
   </div>
 
   <div id="c4" class="mb-4 pb-3 border-bottom">
@@ -153,7 +153,7 @@ draft: false
 
   <div id="c8" class="mb-0">
     <h5 class="fw-bold">⑧ 刑事弁護</h5>
-    <p>犯罪の疑いにより、逮捕・勾留された場合に、警察警察等で接見を行い、事案に応じて、被疑者段階での弁護活動、訴訟段階での弁護活動を行っております。また、これに関連して被害者への被害弁償を進めます。犯罪被害を受けた場合の、賠償問題についても取り扱います。</p>
+    <p>犯罪の疑いにより、逮捕・勾留された場合に、警察等で接見を行い、事案に応じて、被疑者段階での弁護活動、訴訟段階での弁護活動を行っております。また、これに関連して被害者への被害弁償を進めます。犯罪被害を受けた場合の、賠償問題についても取り扱います。</p>
   </div>
 </div>
 <!-- 個人カードここまで-->
@@ -161,13 +161,13 @@ draft: false
 
 <!--法人カードここから-->
 <div class="card border rounded p-4 mb-5">
-  <h4 class="fw-bold border-bottom pb-2 mb-4" style="color: #3c2b1c; font-family: 'Hiragino Mincho ProN', serif;">
+  <h4 id="company" class="fw-bold border-bottom pb-2 mb-4" style="color: #3c2b1c; font-family: 'Hiragino Mincho ProN', serif;">
     法人のお客様
   </h4>
 
   <div id="d1" class="mb-4 pb-3 border-bottom">
     <h5 class="fw-bold">① 会社法務一般（株主総会、株主代表訴訟含む）</h5>
-    <p>会社経営を行っていく上で不可欠な、株式会社法及び関係会社法への対応についての法的サービスを行っております。株主総会準備・運営指導、株主代表訴訟などの株主対応についてのアドバイスを行っております。また、役員責任は社員の責任問題、契約、クレーム、労働等の日常的な法務問題全般について、意見書作成、法律相談、交渉、訴訟等に対応します。</p>
+    <p>会社経営を行っていく上で不可欠な、株式会社法及び関係会社法への対応についての法的サービスを行っております。株主総会準備・運営指導、株主代表訴訟などの株主対応についてのアドバイスを行っております。また、役員責任や社員の責任問題、契約、クレーム、労働など、日常的な法務全般について、意見書作成、法律相談、交渉、訴訟等に対応します。</p>
   </div>
 
   <div id="d2" class="mb-4 pb-3 border-bottom">
