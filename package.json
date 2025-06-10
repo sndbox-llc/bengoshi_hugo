@@ -1,6 +1,6 @@
 {
   "name": "hotaka_law_hugo",
-  "version": "1.0.50",
+  "version": "2.0.0",
   "description": "ほたか総合法律事務所の公式Webサイト",
   "homepage": "https://hotaka-law.hotaka-g.jp/",
   "author": "sndbox LLC",
@@ -16,9 +16,6 @@
     "exe": "rm -rf public && hugo server"
   },
   "devDependencies": {
-    "bootstrap": "^5.3.6",
-    "exec-bin": "^1.0.0",
-    "feather-icons": "^4.29.2"
   },
   "otherDependencies": {
     "hugo": "0.136.4"
