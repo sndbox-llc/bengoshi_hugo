@@ -16,10 +16,9 @@
     "exe": "rm -rf public && hugo server"
   },
   "devDependencies": {
-    "bootstrap": "^5.3.3",
+    "bootstrap": "^5.3.6",
     "exec-bin": "^1.0.0",
-    "feather-icons": "^4.29.2",
-    "hugo-installer": "^2.0.0"
+    "feather-icons": "^4.29.2"
   },
   "otherDependencies": {
     "hugo": "0.136.4"
