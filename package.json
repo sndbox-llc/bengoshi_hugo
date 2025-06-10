@@ -1,22 +1,9 @@
 {
-  "name": "@filipecarneiro/hugo-bootstrap-theme",
+  "name": "hotaka_law_hugo",
   "version": "1.0.50",
-  "description": "Hugo theme for a secure, blazing fast and SEO-ready static website, using Bootstrap 5.",
-  "keywords": [
-    "hugo",
-    "hugo theme",
-    "bootstrap",
-    "bootstrap 5",
-    "static site generator"
-  ],
-  "homepage": "https://github.com/filipecarneiro/hugo-bootstrap-theme/blob/main/README.md",
-  "bugs": {
-    "url": "https://github.com/filipecarneiro/hugo-bootstrap-theme/issues"
-  },
-  "author": {
-    "name": "Filipe Carneiro",
-    "url": "https://github.com/filipecarneiro/"
-  },
+  "description": "ほたか総合法律事務所の公式Webサイト",
+  "homepage": "https://hotaka-law.hotaka-g.jp/",
+  "author": "sndbox LLC",
   "license": "MIT",
   "repository": {
     "type": "git",
