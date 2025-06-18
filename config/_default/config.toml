@@ -32,7 +32,7 @@ enableEmoji = true
 
 
 [params]
-  noindex = true
+  noindex = false
 
 [frontmatter]
   date = ["date", "publishDate", "lastmod"]
