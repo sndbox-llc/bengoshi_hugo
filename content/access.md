@@ -25,7 +25,7 @@ description: '栃木県宇都宮市の弁護士法人ほたか総合法律事務
 <dt>FAX</dt>
 <dd>028-636-6702</dd>
 <dt>URL</dt>
-<dd>https://hotaka-law.com</dd>
+<dd>https://hotaka-law.hotaka-g.jp/</dd>
 </dl>
 
 
