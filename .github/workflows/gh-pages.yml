@@ -50,7 +50,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '22' # 22系の最新を使う設定
-          cache: 'yarn'      # yarnのキャッシュも有効化して爆速に
+          # cache: 'yarn'      # yarnのキャッシュも有効化して爆速に
       # --- ここまで追加 ---
 
       - name: Setup Pages
