@@ -1,6 +1,6 @@
-+++
-aliases = ["posts", "blog"]
-title = "インフォメーション"
-authors = ["Admin"]
-tags = []
-+++
+---
+aliases: ["posts", "blog"]
+title: "インフォメーション"
+authors: ["Admin"]
+tags: []
+---
