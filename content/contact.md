@@ -3,7 +3,7 @@ title: お問い合わせ
 description: 法律相談・ご依頼に関するお問い合わせはこちら。交通事故、離婚、相続、企業法務などに関するご質問は、お電話または専用フォームよりお気軽にご連絡ください。
 ---
 
-## お問い合わせ{#inqueryTitle}
+## お問い合わせ {#inqueryTitle}
 
 <!-- 電話カード -->
 <div class="card border rounded p-4 my-5 text-center">
