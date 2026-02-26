@@ -1,0 +1,34 @@
+---
+// src/pages/blog.astro
+import { getCollection } from 'astro:content'
+import Layout from '../components/Layout.astro'
+
+const allBlogPosts = await getCollection('blog')
+
+// 配列を一度コピーしてからソートする（これが重要！）
+const sortedPosts = [...allBlogPosts].sort((a, b) => {
+  const dateA = new Date(a.data.date).getTime()
+  const dateB = new Date(b.data.date).getTime()
+
+  // 新しい順（降順）なら B - A
+  return dateB - dateA
+})
+---
+
+<Layout frontmatter={{ title: 'ブログ記事一覧' }}>
+  <div class="list-group">
+    {
+      sortedPosts.map((post) => (
+        <a href={`/${post.slug}`} class="list-group-item list-group-item-action">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1 text-brown">{post.data.title}</h5>
+            <small>{post.data.date.toLocaleDateString('ja-JP')}</small>
+          </div>
+          <p class="mb-1 text-muted">{post.data.description || '記事の内容を読む...'}</p>
+        </a>
+    <hr />
+
+      ))
+    }
+  </div>
+</Layout>

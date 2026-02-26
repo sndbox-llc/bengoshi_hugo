@@ -1,0 +1,45 @@
+---
+interface Props {
+  title?: string
+  frontmatter?: any
+  showBanner?: boolean
+}
+
+import Navbar from './Navbar.astro'
+import Footer from './Footer.astro'
+import TopBanner from './TopBanner.astro'
+import Sidebar from './Sidebar.astro'
+
+// CSSの代わりに統合したSCSSをインポート
+import '../styles/global.scss'
+
+const { title, frontmatter, showBanner = true } = Astro.props
+---
+
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{title || frontmatter?.title}</title>
+  </head>
+  <body>
+    <Navbar />
+    <div id="content" class="container my-4">
+      {showBanner && <TopBanner />}
+      <div class="row">
+        <main class="col-md-9">
+          <slot />
+        </main>
+        <aside class="col-md-3">
+          <Sidebar />
+        </aside>
+      </div>
+    </div>
+    <Footer />
+
+    <script>
+      import 'bootstrap/dist/js/bootstrap.bundle.min.js'
+    </script>
+  </body>
+</html>

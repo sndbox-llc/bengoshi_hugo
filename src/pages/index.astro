@@ -1,0 +1,48 @@
+---
+// src/pages/index.astro
+import Layout from '../components/Layout.astro' // Layoutをインポート
+// 必要ならここで getCollection してブログ一覧のデータを取る
+const showBanner = true // トップページ専用のバナーを表示するためのフラグ
+---
+
+<Layout frontmatter={{ title: 'トップページ' }} showBanner={true}>
+  <div class="container my-5">
+    <!-- 理念文 -->
+
+    <div class="text-center py-5">
+      <div class="d-inline-block border-top border-bottom border-3 border-brown px-4 py-3">
+        <p class="fs-5 text-dark fw-semibold mb-0">
+          弁護士法人ほたか総合法律事務所は、<br class="d-none d-md-inline" />
+          「総合病院」のような法律事務所を目指しています。
+        </p>
+      </div>
+    </div>
+
+    <section class="py-5 bg-light">
+      <div class="container">
+        <h2 class="mb-4 text-brown">業務案内</h2>
+
+        <a href="/business#customer" class="text-decoration-none text-reset">
+          <div class="mb-4 p-4 bg-white border-start border-3 border-secondary shadow-sm rounded hover-shadow">
+            <h5 class="fw-bold text-dark">個人のお客様</h5>
+            <p class="mb-0 text-muted">交通事故・債務整理・破産・不動産（賃貸借を含む）・労働・債権回収・民事介入暴力対応・離婚・遺言・相続・刑事告訴・刑事弁護等、様々な法的サービスを提供しております。</p>
+          </div>
+        </a>
+
+        <a href="/business#company" class="text-decoration-none text-reset">
+          <div class="mb-4 p-4 bg-white border-start border-3 border-secondary shadow-sm rounded hover-shadow">
+            <h5 class="fw-bold text-dark">法人のお客様</h5>
+            <p class="mb-0 text-muted">企業法務全般・事業再生・事業承継・倒産・債権回収・契約書作成・意見書作成・不祥事対応・民事介入暴力対応等、法人向けの法的サポートを提供いたします。</p>
+          </div>
+        </a>
+
+        <a href="/business#other" class="text-decoration-none text-reset">
+          <div class="mb-4 p-4 bg-white border-start border-3 border-secondary shadow-sm rounded hover-shadow">
+            <h5 class="fw-bold text-dark">その他</h5>
+            <p class="mb-0 text-muted">ご依頼に応じて、各種講義・講演等を行っております。</p>
+          </div>
+        </a>
+      </div>
+    </section>
+  </div>
+</Layout>

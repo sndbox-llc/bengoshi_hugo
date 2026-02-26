@@ -1,0 +1,138 @@
+// BootstrapをSCSSとして読み込む（変数の上書きが可能になります）
+@import "bootstrap/scss/bootstrap";
+
+@import './dl.scss';
+@import'./ueda.scss';
+// サイト全体の共通調整
+
+
+body {
+  font-family: 'Hiragino Mincho ProN', serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+.text-brown {
+    color: #7a3b1d;
+}
+  
+a {
+  color: #7a3b1d; /* おすすめの上品な茶色 */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #5c2e10; /* ホバー時は濃いめに */
+  text-decoration: underline;
+}
+
+.top-banner-section {
+  .top-banner {
+    background-image: url('/images/top-banner.jpg');
+    background-size: cover;
+    background-position: center right;
+    border-radius: 8px;
+    min-height: 320px;
+    position: relative;
+    overflow: hidden;
+
+    .overlay {
+      position: absolute;
+      inset: 0;
+      background-color: rgba(59, 35, 22, 0.6);
+      z-index: 1;
+    }
+
+    .content {
+      position: relative;
+      z-index: 2;
+      padding: 3rem 3rem;
+
+      p {
+        font-size: 1.25rem;
+        color: #fff;
+        margin: 0;
+      }
+    }
+
+    &:hover {
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      transition: box-shadow 0.2s ease-in-out;
+    }
+  }
+}
+
+
+.mainContents {
+  h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1.5rem 0;
+    color: #5c2e10; /* 深ブラウン */
+    background: #f4f1ee;
+    margin-bottom: 1rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1rem 0;
+    color: #5c2e10; /* 深ブラウン */
+    background: #f4f1ee;
+    margin-bottom: 1rem;
+  }
+}
+
+
+
+.navbar-custom {
+  background: linear-gradient(to bottom, #6a3d1e, #47280f);
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+
+  .nav-item {
+    display: flex;
+    align-items: center;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+
+    &:last-child {
+      border-right: none;
+    }
+
+    .nav-link {
+      color: #fff;
+      font-family: 'Hiragino Mincho ProN', serif;
+      font-weight: bold;
+      padding: 0.75rem 1.5rem;
+      white-space: nowrap;
+      border-left: 1px solid rgba(255, 255, 255, 0.2);
+
+      &:first-child {
+        border-left: none;
+      }
+
+      &:hover,
+      &.active {
+        background-color: rgba(255, 255, 255, 0.1);
+        color: #fff;
+      }
+
+      .bi {
+        margin-right: 0.25rem;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 576px) {
+  .sub-links {
+    text-align: center !important;
+    margin-top: 1rem;
+  }
+  .sub-links a {
+    display: block;
+    margin-bottom: 0.25rem;
+  }
+}

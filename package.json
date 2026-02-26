@@ -1,23 +1,18 @@
 {
-  "name": "hotaka_law_hugo",
-  "version": "2.0.0",
-  "description": "ほたか総合法律事務所の公式Webサイト",
-  "homepage": "https://hotaka-law.hotaka-g.jp/",
-  "author": "sndbox LLC",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/sndbox-llc/bengoshi_hugo.git"
-  },
-  "publishConfig": {
-    "access": "public"
-  },
+  "name": "shaky-shepherd",
+  "type": "module",
+  "version": "0.0.1",
   "scripts": {
-    "exe": "rm -rf public && hugo server"
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^5.17.1",
+    "bootstrap": "^5.3.8"
   },
   "devDependencies": {
-  },
-  "otherDependencies": {
-    "hugo": "0.153.2"
+    "sass": "^1.97.3"
   }
 }
