@@ -1,15 +1,20 @@
-// BootstrapをSCSSとして読み込む
+@use 'dl';
+
 @import "bootstrap/scss/bootstrap";
-@import './dl.scss';
 
 
 body {
   font-family: 'Hiragino Mincho ProN', serif;
 }
 
-// img {
-//     max-width: 100%;
-// }
+a {
+  color: #7a3b1d;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
 
 .text-brown {
     color: #7a3b1d;
