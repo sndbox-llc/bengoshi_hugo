@@ -22,56 +22,45 @@ const isBlog = entry.collection === 'blog'
 ---
 
 <Layout frontmatter={entry.data}>
-  <article class="card shadow-sm border-0 mb-5">
-    <header class="card-body p-4 p-md-5 border-bottom bg-light rounded-top">
-      {/* 1. Blogの時だけバッジを表示 */}
-      {
-        isBlog && (
+  {/* --- 1. Blog (投稿記事) のレイアウト --- */}
+  {
+    isBlog && (
+      <article class="card shadow-sm border-0 mb-5 container">
+        <header class="card-body p-4 p-md-5 border-bottom bg-light rounded-top">
           <div class="mb-3">
-            <span class="badge bg-primary text-uppercase font-monospace" style="letter-spacing: 1px;">
-              Blog Post
-            </span>
+            <span class="badge bg-primary text-uppercase font-monospace">Blog Post</span>
           </div>
-        )
-      }
-
-      <h1 class="display-5 fw-bold text-dark mb-3">{entry.data.title}</h1>
-
-      {/* 2. Blogの時だけ日付を表示 */}
-      {
-        isBlog && (
-          <div class="d-flex align-items-center text-muted small">
-            <span class="me-3">
-              <i class="bi bi-calendar3 me-1" />
-              {entry.data.date
-                ? entry.data.date.toLocaleDateString('ja-JP', {
-                    year: 'numeric',
-                    month: 'long',
-                    day: 'numeric',
-                  })
-                : '日付なし'}
-            </span>
+          <h1 class="display-5 fw-bold text-dark mb-3">{entry.data.title}</h1>
+          <div class="text-muted small">
+            <i class="bi bi-calendar3 me-1" />
+            {entry.data.date ? entry.data.date.toLocaleDateString('ja-JP', { year: 'numeric', month: 'long', day: 'numeric' }) : '日付なし'}
           </div>
-        )
-      }
-    </header>
+        </header>
 
-    <div class="card-body p-4 p-md-5 article-content">
-      <Content />
-    </div>
+        <div class="card-body p-4 p-md-5 article-content">
+          <Content />
+        </div>
 
-    {/* 3. Blogの時だけフッター（戻るボタン）を表示 */}
-    {
-      isBlog && (
         <footer class="card-footer bg-white p-4 border-0 text-center">
           <hr class="mb-4" />
           <a href="/blog" class="btn btn-outline-secondary px-4">
             ← 記事一覧に戻る
           </a>
         </footer>
-      )
-    }
-  </article>
+      </article>
+    )
+  }
+
+  {/* --- 2. Page (固定ページ) のレイアウト --- */}
+  {
+    !isBlog && (
+      <div>
+        <div class="article-content">
+          <Content />
+        </div>
+      </div>
+    )
+  }
 </Layout>
 
 <style is:global>

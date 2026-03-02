@@ -9,8 +9,6 @@ import Navbar from './Navbar.astro'
 import Footer from './Footer.astro'
 import TopBanner from './TopBanner.astro'
 import Sidebar from './Sidebar.astro'
-
-// CSSの代わりに統合したSCSSをインポート
 import '../styles/global.scss'
 
 const { title, frontmatter, showBanner = true } = Astro.props
@@ -21,6 +19,8 @@ const { title, frontmatter, showBanner = true } = Astro.props
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="favicon.png" type="image/png" />
+
     <title>{title || frontmatter?.title}</title>
   </head>
   <body>
