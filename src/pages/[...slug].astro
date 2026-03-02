@@ -17,7 +17,7 @@ export async function getStaticPaths() {
 const { entry } = Astro.props
 const { Content } = await entry.render()
 
-// 現在のコレクションが 'blog' かどうかを判定
+/** 現在のコレクションが 'blog' かどうかを判定 */
 const isBlog = entry.collection === 'blog'
 ---
 
@@ -62,32 +62,3 @@ const isBlog = entry.collection === 'blog'
     )
   }
 </Layout>
-
-<style is:global>
-  /* 本文内のタイポグラフィを整える */
-  .article-content {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    color: #333;
-  }
-
-  .article-content h2 {
-    font-weight: 700;
-    margin-top: 2.5rem;
-    margin-bottom: 1.25rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 2px solid #eee;
-  }
-
-  .article-content p {
-    margin-bottom: 1.5rem;
-  }
-
-  .article-content img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    margin: 2rem 0;
-  }
-</style>

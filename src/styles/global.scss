@@ -1,7 +1,5 @@
 @use 'dl';
-
-@import "bootstrap/scss/bootstrap";
-
+@import 'bootstrap/scss/bootstrap';
 
 body {
   font-family: 'Hiragino Mincho ProN', serif;
@@ -10,16 +8,14 @@ body {
 a {
   color: #7a3b1d;
   text-decoration: none;
-
   &:hover {
     text-decoration: underline;
   }
 }
 
 .text-brown {
-    color: #7a3b1d;
+  color: #7a3b1d;
 }
-  
 
 .top-banner-section {
   .top-banner {
@@ -56,8 +52,6 @@ a {
     }
   }
 }
-
-
 
 @media (max-width: 576px) {
   .sub-links {
