@@ -49,8 +49,8 @@ const sortedPosts = [...allBlogPosts].sort((a, b) => {
   {
     sortedPosts.slice(0, 5).map((post) => (
       <a href={`/${post.slug}`} class="list-group-item list-group-item-action">
-        <small>{post.data.date.toLocaleDateString('ja-JP')}</small>
-
+        <p class="small">{post.data.date.toLocaleDateString('ja-JP')}</small>
+          
         <div class="d-flex w-100 justify-content-between">
           <h5 class="mb-1 text-brown">{post.data.title.substr(0, 10)}</h5>
         </div>
